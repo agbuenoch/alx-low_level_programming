@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc --assemble 0-main.c -o 0-main.s
+gcc --assemble -masm=intel 0-main.c -o 0-main.s
