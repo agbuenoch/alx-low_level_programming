@@ -7,7 +7,7 @@
 int main(void)
 {
 char digits;
-digits = 0; 
+digits = 0;
 while (digits < 10)
 {
 printf("%d", digits);
