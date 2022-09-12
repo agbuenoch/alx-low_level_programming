@@ -7,26 +7,16 @@
 int main()
 {
 char other_alphabet;
-
-/**
- *char exclude_alphabet_q;
- *
- *char exclude_alphabet_e;
- */
-
 other_alphabet = 'a';
-/**
- *exclude_alphabet_q = 'q';
- *
- *exclude_alphabet_e = 'e';
- */ 
 
-while (other_alphabet != 'q' && other_alphabet != 'e')
+while (other_alphabet <= 'z')
 {
-if (other_alphabet <= 'z'){
+if (other_alphabet == 'q' || other_alphabet == 'e')
+{
+continue;
+}
 putchar(other_alphabet);
 other_alphabet++;
-}
 }
 putchar('\n');
 return (0);
