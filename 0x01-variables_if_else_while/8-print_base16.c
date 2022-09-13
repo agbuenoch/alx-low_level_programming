@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-char digits;
+char digits; /*YOU CAN USE int digits or short digits*/
 digits = 0x0;
 while (digits < 16)
 {
