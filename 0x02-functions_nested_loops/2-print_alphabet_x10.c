@@ -18,5 +18,5 @@ val++;
 _putchar('\n');
 counter++;
 }
- return;
+return;
 }
