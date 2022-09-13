@@ -7,13 +7,15 @@
 int main(void)
 {
 char myvalues[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
- int counter = 0;
+int counter = 0;
 
- int len = sizeof(arr)/sizeof(arr[0]);
+int len = sizeof(myvalues)/sizeof(myvalues[0]);
  
- for (counter = 0; counter < myvalues < len; counter++){
-   putchar(myvalues[counter]);
- }
+for (counter = 0; counter < len; counter++){
+putchar(myvalues[counter]);
+}
 
+putchar('\n');
+  
 return (1);
 }
