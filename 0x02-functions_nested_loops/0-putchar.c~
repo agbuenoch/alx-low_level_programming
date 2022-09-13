@@ -1,0 +1,13 @@
+/**
+ * main - entry point
+ *
+ * Return: On success 1.
+ */
+int main(void) /*This is the main function*/
+{
+int _putchar(char c);
+int value;
+value = "_putchar";
+_putchar(value);
+return (0);
+}
