@@ -1,4 +1,4 @@
-/*#include <main.h> */
+#include "main.h"
 /**
  * main - entry point
  *
@@ -6,7 +6,6 @@
  */
 int main(void)
 {
-#include "main.h"
 char val[] = "_putchar";
 int i;
 int len = sizeof(val) / sizeof(val[0]);
