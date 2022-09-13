@@ -8,7 +8,7 @@ int main(void) /*The main function*/
 {
 int x, y;
  
-for(x = 0; x < 10; x++)
+for(x = 0; x < 9; x++)
    {
      for(y = 1; y < 10; y++)
        {
@@ -21,6 +21,7 @@ for(x = 0; x < 10; x++)
 	   }
        }
    }
+ putchar('\n');
  return (0);
 }
 
