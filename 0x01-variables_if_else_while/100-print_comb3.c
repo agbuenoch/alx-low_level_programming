@@ -12,7 +12,7 @@ for(x = 0; x < 9; x++)
    {
      for(y = 1; y < 10; y++)
        {
-	 if (!(x + y) || (!y + x))
+	 if ((x < y) || (x > y))
 	   {
 	 putchar(x + '0');
 	 putchar(y + '0');
