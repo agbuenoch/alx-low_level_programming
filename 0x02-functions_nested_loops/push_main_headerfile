@@ -1,0 +1,4 @@
+#!/bin/bash
+git add main.h
+git commit -m "Prototypes of Functions used in this Project"
+git push

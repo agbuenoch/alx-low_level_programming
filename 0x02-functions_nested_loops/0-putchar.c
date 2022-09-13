@@ -4,11 +4,15 @@
  *
  * Return: On success 1.
  */
-int main(void) /*This is the main function*/
+int main(void)
 {
-int _putchar(char c);
-char value;
-value = "_putchar";
-_putchar(value);
+char val[] = "_putchar";
+int i;
+int len = sizeof(val) / sizeof(val[0]);
+for (i = 0; i < len - 1; i++)
+{
+_putchar(val[i]);
+}
+_putchar('\n');
 return (0);
 }
