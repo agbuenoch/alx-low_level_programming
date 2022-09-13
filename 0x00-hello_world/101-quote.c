@@ -4,10 +4,16 @@
  *
  *Return: Always return zero i.e success
  */
-int putchar(int va)
 int main(void)
 {
-char values = 'and that piece of art is useful\" - Dora Korpar, 2015-10-19');
-putchar(values);
+char myvalues[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+ int counter = 0;
+
+ int len = sizeof(arr)/sizeof(arr[0]);
+ 
+ for (counter = 0; counter < myvalues < len; counter++){
+   putchar(myvalues[counter]);
+ }
+
 return (1);
 }
