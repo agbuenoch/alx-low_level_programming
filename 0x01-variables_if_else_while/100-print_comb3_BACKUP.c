@@ -10,13 +10,21 @@ int x, y;
  
 for(x = 0; x < 10; x++)
    {
-     for(y = 1; y < 10; y++)
+     for(y = 0; y < 10; y++)
        {
-	 putchar((x, y) + '0');
-	 putchar(',');
-	 putchar(' ');
+	 if (!(x == y) || (y < x))
+	   {
+	 putchar(x + '0');
+	 putchar(y + '0');
+	 if ((x + y) <= 17)
+	   {
+	     putchar(',');
+	     putchar(' ');
+	   }
+	   }
        }
    }
+ putchar('\n');
  return (0);
 }
 
