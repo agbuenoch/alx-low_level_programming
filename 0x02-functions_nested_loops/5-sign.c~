@@ -1,0 +1,9 @@
+#include "main.h"
+/**
+ * main - check the code.
+ *
+ * c parameter is used during
+ * function call.
+ *
+ * Return: Always 0.
+ */

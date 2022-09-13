@@ -1,9 +1,12 @@
 /**
- * main - check the code.
+ * _isalpha - return 1 if argument is a letter, lower or uppercase..
+ *
+ * C: - the argument passed during function call.
  *
  * Return: Always 0.
  */
-int _isalpha(int c)
+/* c: is the parameter */
+int _isalpha(int c)/* c: is the parameter */
 {
 if (c >= 'A' && c <= 'z')
 {

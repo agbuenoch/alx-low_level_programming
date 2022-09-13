@@ -4,7 +4,7 @@
  *
  * Return: Always 0.
  *
- * int c - Parameter uses during function call
+ * c - Parameter uses during function call.
  */
 int _islower(int c)
 {
