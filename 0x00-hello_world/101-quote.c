@@ -9,7 +9,7 @@ int main(void)
 char myval[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 int counter = 0;
 int len = sizeof(myval) / sizeof(myval[0]);
-for (counter = 0; counter < len; counter++)
+for (counter = 0; counter < len - 1; counter++)
 {
 putchar(myval[counter]);
 }
