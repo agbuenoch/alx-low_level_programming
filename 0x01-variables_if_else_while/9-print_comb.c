@@ -6,14 +6,14 @@
  */
 int main(void) /*The main function*/
 {
-int digit_char;
-digit_char = 0;
-while (digit_char < 10)
+int digit;
+digit = 0;
+while (digit < 10)
 {
-putchar(digit_char + '0');
+putchar(digit + '0');
 putchar(',');
 putchar(' ');
-digit_char++;
+digit++;
 }
 putchar('\n');
 return (0);
