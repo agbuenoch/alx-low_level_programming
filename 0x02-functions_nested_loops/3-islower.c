@@ -2,9 +2,9 @@
 /**
  * _islower - check the code.
  *
- * Return: Always 0.
+ * @c: first member
  *
- * c - Parameter uses during function call.
+ * Return: Always 0.
  */
 int _islower(int c)
 {
