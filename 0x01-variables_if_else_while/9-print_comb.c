@@ -4,15 +4,17 @@
  *
  *Return: always 0 (success)
  */
-int main(void)
+int main(void) /*The main function*/
 {
-int digits;
-digits = 0;
-while (digits < 10)
+int digit_char;
+digit_char = 0;
+while (digit_char < 10)
 {
-printf("%d", digits);
-digits++;
+putchar(digit_char + '0');
+putchar(',');
+putchar(' ');
+digit_char++;
 }
-printf("\n");
+putchar('\n');
 return (0);
 }
