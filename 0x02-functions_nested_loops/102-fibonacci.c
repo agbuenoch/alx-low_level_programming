@@ -13,7 +13,7 @@ int counter;
 first = 1;
 second = 2;
 counter = 0;
-printf("%d, %d, ", first, second);
+printf("1, 2, ");
 while (counter <= 50)
 {
 next = first + second;
