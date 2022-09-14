@@ -12,7 +12,7 @@ long int next;
 int counter;
 first = 1;
 second = 2;
-counter = 0;
+counter = 3;
 printf("%lu, %lu, ", first, second);
 while (counter <= 50)
 {
