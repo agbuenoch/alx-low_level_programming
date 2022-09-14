@@ -6,18 +6,18 @@
  */
 int main(void)
 {
-int first;
-int second;
-int next;
+long int first;
+long int second;
+long int next;
 int counter;
 first = 1;
 second = 2;
 counter = 0;
-printf("1, 2, ");
+printf("%lu, %lu, ", first, second);
 while (counter <= 50)
 {
 next = first + second;
-printf("%d", next);
+printf("%lu", next);
 if (counter < 50)
 {
 printf(", ");
