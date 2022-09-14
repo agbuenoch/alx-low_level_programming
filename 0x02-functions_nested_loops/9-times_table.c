@@ -6,14 +6,14 @@
  */
 void times_table(void)
 {
-  char row;
+  int row;
   row = 0x00;
   while (row <= 0x09)
     {
-      char col;
-      char times = 0x00;
-      col = 0x0;
-      while (col <= 0x9)
+      int col;
+      int times = 0x00;
+      col = 0x00;
+      while (col <= 0x09)
 	{
 	  times = row * col;
 	  _putchar(times + '0');
