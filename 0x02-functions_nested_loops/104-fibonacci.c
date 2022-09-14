@@ -13,7 +13,7 @@ int counter;
 first = 1;
 second = 2;
 counter = 3;
-printf("%lu,\n%lu,\n", first, second);
+printf("%lu, %lu, ", first, second);
 while (counter <= 98)
 {
 next = first + second;
@@ -25,7 +25,6 @@ printf(", ");
 first = second;
 second = next;
 counter++;
-putchar('\n');
 }
 putchar('\n');
 return (0);
