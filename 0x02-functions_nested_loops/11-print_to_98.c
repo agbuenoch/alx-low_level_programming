@@ -37,7 +37,8 @@ n--;
 }
 putchar('\n');
 }
-else {
+else
+{
 printf("%d", n);
 putchar('\n');
 }
