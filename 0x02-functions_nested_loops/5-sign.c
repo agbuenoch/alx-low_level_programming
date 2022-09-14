@@ -1,34 +1,26 @@
 #include "main.h"
 /**
- * main - check the code.
+ * print_sign - check the code.
  *
- * c parameter is used during
- * function call.
+ * @n: first parameter
  *
  * Return: Always 0.
  */
 int print_sign(int n)
 {
-  if (n > 0)
-    {
-      _putchar('+');
-      _putchar(',');
-      _putchar(' ');
-      _putchar('1');
-    }
-  if (n == 0)
-    {
-      _putchar('0');
-      _putchar(',');
-      _putchar(' ');
-      _putchar('0');
-    }
-  if (n < 0)
-    {
-      _putchar('-');
-      _putchar('1');
-      _putchar(',');
-      _putchar(' ');
-      _putchar('-');
-    }
+if (n > 0)
+{
+_putchar('+');
+return (1);
+}
+if (n == 0)
+{
+_putchar('0');
+return (0);
+}
+if (n < 0)
+{
+_putchar('-');
+return (-1);
+}
 }
