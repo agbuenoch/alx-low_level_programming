@@ -20,6 +20,7 @@ void print_to_98(int n)
 	    }
 	  n++;
 	}
+      putchar('\n');
     }
   else if (n > 98)
     {
