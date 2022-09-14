@@ -3,7 +3,7 @@
 /**
  * print_to_98 - check the code
  *
- *@n: first parameter
+ * @n: first parameter
  *
  * Return: Always 0.
  */
