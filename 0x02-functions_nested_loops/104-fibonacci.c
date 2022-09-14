@@ -12,8 +12,8 @@ long int next;
 int counter;
 first = 1;
 second = 2;
-counter = 3;
-printf("%lu, %lu, ", first, second);
+counter = 1;
+printf("%lu, %lu, \n", first, second);
 while (counter <= 98)
 {
 next = first + second;
