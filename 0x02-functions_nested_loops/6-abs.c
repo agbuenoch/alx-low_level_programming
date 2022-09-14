@@ -6,7 +6,10 @@
  *
  * Return: Always 0.
  */
-int _abs(int x){
-  unsigned int val = x;
-  return (val);
+int _abs(int x)
+{
+if (x < 0){
+  x = x / -1;
+}
+return (x);
 }
