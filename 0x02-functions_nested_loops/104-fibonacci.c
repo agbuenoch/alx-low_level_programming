@@ -26,6 +26,6 @@ first = second;
 second = next;
 counter++;
 }
-putchar('\n');
+printf("\n");
 return (0);
 }
