@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - check the code
+ * print_to_98 - check the code
+ *
+ *@n: first parameter
  *
  * Return: Always 0.
  */
