@@ -7,13 +7,13 @@
 void times_table(void)
 {
   int row;
-  row = 0x00;
-  while (row <= 0x09)
+  row = 0;
+  while (row <= 9)
     {
       int col;
-      int times = 0x00;
+      int times = 0;
       col = 0x00;
-      while (col <= 0x09)
+      while (col <= 9)
 	{
 	  times = row * col;
 	  _putchar(times + '0');
