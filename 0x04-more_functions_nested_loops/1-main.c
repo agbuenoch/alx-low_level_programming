@@ -10,9 +10,9 @@ int main(void)
 {
   char c;
 
-  c = 'Q';
+  c = '9';
   printf("%c: %d\n", c, _isdigit(c));
-  c = 'a';
+  c = '1';
   printf("%c: %d\n", c, _isdigit(c));
   return (0);
 }
