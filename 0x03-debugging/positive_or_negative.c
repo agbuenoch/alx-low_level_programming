@@ -3,15 +3,12 @@
 #include <time.h>
 /*more headers goes there */
 /**
- *main - entry point
+ *positive_or_negative - entry point
  *
  *Return: always 0 (success)
  */
-int main(void) /*This is the main function*/
+int positive_or_negative(int n) /*This is the main function*/
 {
-int n;
-srand(time(0));
-n = rand() - RAND_MAX / 2;
 /*your code goes there */
 if (n > 0)
 {
