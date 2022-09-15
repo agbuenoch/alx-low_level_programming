@@ -12,8 +12,10 @@ int letter;
   if (letter == 'e' || letter == 'q')
     {
       continue;
-      putchar(letter + '0');
+    }
+      putchar(letter);
+
 }
-putchar('\n');
-return (0);
+ putchar('\n');
+ return (0);
 }
