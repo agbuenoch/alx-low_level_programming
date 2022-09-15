@@ -12,17 +12,17 @@ void times_table(void)
     {
       int col;
       int times = 0;
-      col = 0x00;
+      col = 0;
       while (col <= 9)
 	{
 	  times = row * col;
-	  if ( row <= 9 || col <= 9)
+	  if ( row <= 9 && col <= 9)
 	    {
 	      _putchar(times + '0');
 	    }
 	  else
 	    {
-		_putchar((row / 10) + '0');
+	      /*	_putchar((row / 10) + '0'); */
 	      _putchar((col % 10) + '0');
 	    }
 	  _putchar(',');
