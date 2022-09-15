@@ -16,7 +16,15 @@ void times_table(void)
       while (col <= 9)
 	{
 	  times = row * col;
-	  _putchar(times + '0');
+	  if ( row <= 9 || col <= 9)
+	    {
+	      _putchar(times + '0');
+	    }
+	  else
+	    {
+		_putchar((row / 10) + '0');
+	      _putchar((col % 10) + '0');
+	    }
 	  _putchar(',');
 	  _putchar(' ');
 	  col++;
