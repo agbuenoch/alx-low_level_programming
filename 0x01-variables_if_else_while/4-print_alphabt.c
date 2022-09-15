@@ -2,20 +2,19 @@
 /**
  * main - entry poin
  *
- * Return: always 0 (success) 
+ * Return: always 0 (success)
 */
 int main(void)
 {
 int letter;
- for (letter = 'a'; letter <= 'z'; letter++)
+for (letter = 'a'; letter <= 'z'; letter++)
 {
-  if (letter == 'e' || letter == 'q')
-    {
-      continue;
-    }
-      putchar(letter);
-
+if (letter == 'e' || letter == 'q')
+{
+continue;
 }
- putchar('\n');
- return (0);
+putchar(letter);
+}
+putchar('\n');
+return (0);
 }
