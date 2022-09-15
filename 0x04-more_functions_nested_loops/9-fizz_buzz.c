@@ -8,25 +8,18 @@ int main(void)
   i = 1;
   while (i <= 100)
     {
-      
-      char a[] = "Fizz";
-      char b[] = "Buzz";
-      char c[] = "FizzBuzz";
-      /* a = "Fizz";
-      b = "Buzz";
-      c = "FizzBuzz";*/
-      
+            
       if (i % 3 == 0)
 	{
-	  printf("%s ", a);
+	  printf("Fizz ");
 	}
       else if (i % 5 == 0)
 	{
-	  printf("%s ", b);
+	  printf("Buzz ");
 	}
       else if (i % 15 == 0)
 	{
-	  printf("%s ", c);
+	  printf("FizzBuzz ");
 	}
       else
 	{
