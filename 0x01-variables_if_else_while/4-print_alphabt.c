@@ -1,18 +1,18 @@
 #include <stdio.h>
 /**
- *main - entry poin
+ * main - entry poin
  *
- *Return: always 0 (success) 
+ * Return: always 0 (success) 
 */
-int main()
+int main(void)
 {
-char C;
-C = 'a';
- for (C = 'a'; C <= 'z'; C++)
+int letter;
+ for (letter = 'a'; letter <= 'z'; letter++)
 {
-  if (C != 'e' || C != 'q')
+  if (letter == 'e' || letter == 'q')
     {
-      putchar(C + '0');
+      continue;
+      putchar(letter + '0');
 }
 putchar('\n');
 return (0);
