@@ -1,12 +1,7 @@
 #include <stdio.h>
 /**
- * main - The entry point
- *
- * Description:  A function that print two statement,
+ * main - The entry point. A function that print two statement
  * to the standard output and resolve an infinite loop.
- * @\\: first parameter
- * @o/: second parameter
- * @\n: third parameter
  *
  * Return: 0 (successs)
  */
