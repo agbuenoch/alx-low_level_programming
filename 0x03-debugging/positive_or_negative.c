@@ -5,6 +5,8 @@
 /**
  *positive_or_negative - entry point
  *
+ *@n: first parameter
+ *
  *Return: always 0 (success)
  */
 int positive_or_negative(int n) /*This is the main function*/
