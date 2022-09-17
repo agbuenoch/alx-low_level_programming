@@ -3,16 +3,10 @@
  * jack_bauer - print 24 hour format clock
  *
  * Return: Always 0.
- */
-void jack_bauer(void)
-{
-/**
  * int hour1; first digit of the hour part
  * int hour2; second digit of hour part
  * int min1; first digit of minutes part
  *int min2; second digit of minutes part
- */
-/**
 * The clock is a 24 Hour clock format,
 * for example: 23:59 meaning 11:59 in "12-Hour"
 * clock format. The first part i.e 23 is the HOUR
@@ -32,21 +26,23 @@ void jack_bauer(void)
 * using their ASCII VALUES: 0 to 2 is: (48 to 51)
 * and 0 to 3 is: (48 to 53).
 */
+void jack_bauer(void)
+{
 int hour1;
-hour1 = 48; /*0 ASCII value: 48*/
-while (hour1 <= 50) /*2 ASCII value: 50*/
+hour1 = 48;
+while (hour1 <= 50)
 {
 int hour2;
 hour2 = 48;
-while (hour2 <= 51) /*3 ASCII value: 51*/
+while (hour2 <= 51)
 {
 int min1;
 min1 = 48;
-while (min1 <= 53) /*5 ASCII value: 53*/
+while (min1 <= 53)
 {
 int min2;
 min2 = 48;
-while (min2 <= 57) /*9 ASCII value: 57*/
+while (min2 <= 57)
 {
 _putchar(hour1);
 _putchar(hour2);
