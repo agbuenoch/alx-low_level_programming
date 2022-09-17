@@ -1,25 +1,44 @@
 #include "main.h"
 /**
- * jack_bauer - check the code
+ * jack_bauer - print 24 hour format clock
  *
  * Return: Always 0.
  */
 void jack_bauer(void){
-  int hour;
-  hour = 0x0;
- 
-  while (hour <= 23)
+  int hour1;
+  int hour2;
+  
+  int min1;
+  int min2;
+  
+  hour1 = 48;
+  while (hour1 <= 50)
     {
-      int min;
-      min = 0x0;
-      while (min <= 59)
+     
+      hour2 = 48;
+      while (hour2 <= 51)
 	{
-	  _putchar(hour + '0');
-	  _putchar(':');
-	  _putchar(min + '0');
-	  _putchar('\n');
-	  min++;
+	 min1 = 48;
+	 while (min1 <= 53)
+	    {
+	    
+	    min2 = 48;
+	    while (min2 <= 57)
+	      {
+		_putchar(hour1);
+		_putchar(hour2);
+		_putchar(':');
+		_putchar(min1);
+		_putchar(min2);
+		min2++;
+		_putchar('\n');
+	      }
+	    min1++;
+	    }
+	  hour2++;
 	}
-      hour++;
+      _putchar('\n');
+      hour1++;
     }
+
 }
