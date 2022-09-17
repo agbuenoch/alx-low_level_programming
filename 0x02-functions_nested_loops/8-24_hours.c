@@ -13,7 +13,7 @@ void jack_bauer(void)
  *int min2; second digit of minutes part
  */
 /**
-* The clock is a "24-Hour" clock format,
+* The clock is a 24 Hour clock format,
 * for example: 23:59 meaning 11:59 in "12-Hour"
 * clock format. The first part i.e 23 is the HOUR
 * and the second part i.e 59 is the MINUTES.
