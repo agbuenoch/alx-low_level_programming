@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * puts2 - print all the even number
  *
@@ -7,10 +8,11 @@
 void puts2(char *str)
 {
   int i;
-
-  for (i = 0; i != '\0'; i++)
+  for (i = 48; i <= '\0'; i++)
     {
-      if (str[i] % 2 == 0)
-	  _putchar('a');
+      if (str[i] % 50 == 48)
+	{
+	  printf("%d\n", str[i]);
+	}
     }
 }
