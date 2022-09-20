@@ -10,7 +10,7 @@ int i;
 int counter = 0;
 while (str[counter] != '\0')
 counter++;
-for (i = 0; i <= counter; i++)
+for (i = 0; i <= counter - 1; i++)
 {
 if (str[i] % 2 == 0)
 {
