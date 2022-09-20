@@ -10,9 +10,9 @@ int i;
 int counter = 0;
 while (str[counter] != '\0')
 counter++;
-for (i = 0; i < counter - 1; i++)
+for (i = 0; i < counter - 1; i = i + 2)
 {
-if (i % 2 != 0)
+if (str[i] % 2 == 0)
 {
 _putchar(str[i]);
 }
