@@ -10,8 +10,9 @@
 void print_rev(char *s)
 {
   int i;
-  for (i = ('\0' - 1); s[i] >= 0; i--) {
-    _putchar(s[i]); /* or newString = newString + str[i]; */
-  }
+  for (i = 0; s[i] != '\0'; i++)
+    {
+      _putchar(s[i]);
+    }
   _putchar('\n');
 }
