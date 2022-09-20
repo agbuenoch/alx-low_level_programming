@@ -1,0 +1,6 @@
+#include "main.h"
+/**
+ * puts_half - print half of the string
+ *
+ * @str: first pointer-to-character parameter
+*/
