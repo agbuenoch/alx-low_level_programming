@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_rev - check the code
+ * print_rev - print strings in reverse order
  *
  * @s: first pointer-to-character parameter
  *
@@ -10,7 +10,7 @@
 void print_rev(char *s)
 {
   int i;
-  for (i = 0; s[i] != '\0'; i++)
+  for (i = '\0'; i >= 0; i--)
     {
       _putchar(s[i]);
     }
