@@ -1,32 +1,26 @@
 #include "main.h"
 /**
- * times_table - check the code
+ * times_table - print a multiplication time from 0 to 9
  *
  * Return: Always 0.
  */
 void times_table(void)
 {
   int row;
-  row = 0;
-  while (row <= 9)
+  row = 48; /* row = 0 but ASCII VALUE for 0 = 48*/
+  while (row <= 57) /*row <= 9 but ASCII VALUE for 9 = 57*/
     {
       int col;
-      int times = 0;
-      col = 0;
-      while (col <= 9)
+      col = 48; /*col = 0 but ASCII VALUE for 0 = 48*/
+      while (col <= 57) /*col <= 9 but ASCII VALUE for 9 = 57*/
 	{
-	  times = row * col;
-	  if ( row <= 9 && col <= 9)
+	  _putchar(row * col);
+       
+	  if (col < 57) /*col < 9 but ASCII VALUE of 9 = 57*/
 	    {
-	      _putchar(times + '0');
+	      _putchar(',');
+	      _putchar(' ');
 	    }
-	  else
-	    {
-	      /*	_putchar((row / 10) + '0'); */
-	      _putchar((row / 10) + '0');
-	    }
-	  _putchar(',');
-	  _putchar(' ');
 	  col++;
 	}
       _putchar('\n');

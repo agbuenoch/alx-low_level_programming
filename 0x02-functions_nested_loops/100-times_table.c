@@ -1,0 +1,39 @@
+#include "main.h"
+/**
+ * print_times_table - printing multiplication table
+ *
+ * @n: first parameter
+ *
+ * Return: 0;
+*/
+void print_times_table(int n)
+{
+  if (n >= 48 && n <= 49) /*ASCII VALUE of 0 = 48. and for 1 = 49*/
+    {
+      if (n >= 48 && n <= 53) /*ASCII VALUE of 0 = 48. and for 5 = 53*/
+	 {  
+	  int i;
+	  for (i = 48; i <= n; i++)
+	    {
+	      int j;
+	      for (j = 48; j <= n; j++)
+		{
+		  _putchar(i * j);
+		  if (j < n)
+		    {
+		      _putchar(',');
+		      _putchar(' ');
+		    } 
+		  j++;
+		}
+	      _putchar('\n');
+	      i++;
+	    }
+	  } 
+    }
+  else
+    {
+      _putchar(' ');
+    }
+
+}
