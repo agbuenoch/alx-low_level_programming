@@ -1,0 +1,14 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * _atoi - convert strings to number
+ *
+ * @s: first parameter
+ *
+ * Return: Always 0.
+ */
+int _atoi(char *s)
+{
+
+}
