@@ -20,6 +20,7 @@ for (i = 0; i < n && src[i] != '\0'; i++, length++)
 {
 dest[length] = src[i];
 }
+/*Put a NULL TERMINATOR at the end of the string*/
 for ( ; i < n; i++)
 {
 dest[length] = '\0';
