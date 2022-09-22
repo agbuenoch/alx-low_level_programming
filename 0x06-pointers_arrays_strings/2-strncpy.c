@@ -6,16 +6,14 @@
  * @src: second pointer-to-character parameter
  * @n: third integer parameter
  *
- * Return: returns pointer-to-character 
+ * Return: returns pointer-to-character
 */
 char *_strncpy(char *dest, char *src, int n)
 {
-  int i;
-
-  for (i = 0; i < n; i++)
-    {
-      dest[i] = src[i];
-    }
-  
-  return (dest);
+int i;
+for (i = 0; i < n; i++)
+{
+dest[i] = src[i];
+}
+return (dest);
 }
