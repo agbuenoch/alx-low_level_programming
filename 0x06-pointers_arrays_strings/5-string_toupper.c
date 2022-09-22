@@ -2,16 +2,19 @@
 /**
  * *string_toupper - convert lowercase to uppercase
  *
- * @lowercase: first pointer-to-character parameter
- * 
+ * @lcase: first pointer-to-character parameter
+ *
  * Return: returns pointer-to-character
 */
-char *string_toupper(char *lowercase)
+char *string_toupper(char *lcase)
 {
-  while (*lowercase)
-    {
-      *lowercase = (*lowercase > 'a' && *lowercase >= 'z') ? *lowercase - 32 : *lowercase;
-      lowercase++;
-    }
-  return (lowercase);
+int i;
+for (i = 0; lcase[i] != '\0'; i++)
+{
+if (lcase[i] >= 'a' && lcase[i] <= 'z')
+{
+lcase[i] = lcase[i] - 32;
+}
+}
+return (lcase);
 }
