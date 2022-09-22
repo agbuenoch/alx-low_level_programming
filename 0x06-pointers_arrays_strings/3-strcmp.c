@@ -14,15 +14,15 @@ int i;
 {
 if (s1[i] < s2[i])
 {
-  return (i);
+  _putchar(i);
  }
 else if (s1[i] > s2[i])
 {
-  return (1);
+  _putchar(1);
 }
 else
 {
-  return (0);
+  _putchar(0);
 }
 }
 }
