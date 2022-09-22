@@ -19,8 +19,8 @@ length++;
 }
 for (i = 0; i < n; i++, length++)
 {
-dest[length] = src[i];
+    dest[length] = src[i];
 }
-dest[length] = '\0';
+
 return (dest);
 }

@@ -6,7 +6,12 @@
  * 
  * Return: returns pointer-to-character
 */
-char *string_toupper(char *)
+char *string_toupper(char *lowercase)
 {
-
+  while (*lowercase)
+    {
+      *lowercase = (*lowercase > 'a' && *lowercase >= 'z') ? *lowercase - 32 : *lowercase;
+      lowercase++;
+    }
+  return (lowercase);
 }
