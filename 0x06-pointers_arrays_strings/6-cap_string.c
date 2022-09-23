@@ -10,7 +10,7 @@ char *cap_string(char *capital)
 {
   int i;
   for(i = 0;  capital[i] != '\0'; i++) {
-    if ((i == 0 && capital[i] != ' ') || (capital[i] != ' ' && capital[i-1] == ' ')) {
+    if ((i == 0 && (capital[i] != ' ' || capital[i] != '\n')) || (capital[i] != ' ' && capital[i-1] == ' ')) {
       if(capital[i] >= 'a' && capital[i] <= 'z') {
 	capital[i] = (char)(('A'-'a') + capital[i] );
       }

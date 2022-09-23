@@ -8,15 +8,9 @@
 void reverse_array(int *a, int n)
 {
   int i;
-  i = n;
-  while (i > 0)
+  for (i = n; i >= 0; i--)
     {
-      if (i != n)
-	{
-	  _putchar('\n');
-	}
-      _putchar(a[i]);
-      i--;
+      _putchar(a[i] + '0');
     }
-  
+  _putchar('\n');
 }
