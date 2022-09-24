@@ -18,7 +18,7 @@ if (s1[i] < s2[i])
  }
 else if (s1[i] > s2[i])
 {
-  _putchar(1);
+  _putchar(i);
 }
 else
 {
