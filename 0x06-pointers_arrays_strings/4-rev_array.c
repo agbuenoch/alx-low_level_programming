@@ -17,13 +17,12 @@ void vv(long val)
 /*A Function for inserting `comma and space`*/
 void comma(int len)
 {
-  int i = 0;
-  if (i < len - 1)
+  if (len > 0)
     {
       _putchar(',');
       _putchar(' ');
     }
-}
+} 
 void reverse_array(int *a, int n)
 {
   int i;
@@ -32,12 +31,13 @@ void reverse_array(int *a, int n)
       if (i <= 9)
 	{
 	  _putchar(a[i] + '0');
-	  comma(n); /*Put comma follow by space after each number except the last number*/
+	  comma(i);
+	  /* comma(n); Put comma follow by space after each number except the last number*/
 	}
       else
 	{
 	  vv(a[i]);
-	  comma(n);
+	  comma(i);
 	}
     }
   _putchar('\n');
