@@ -34,7 +34,6 @@ for (i = n - 1; i >= 0; i--)
 if (i <= 9)
 {
 _putchar(a[i] + '0');
- /*Put comma follow by space after each number except the last number*/
 comma(i);
 }
 else
