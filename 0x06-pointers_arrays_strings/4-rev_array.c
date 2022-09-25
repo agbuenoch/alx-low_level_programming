@@ -12,7 +12,7 @@
 */
 void vv(int val)
 {
-if (val != 0)
+if (val > 0)
 {
 vv(val / 10);
 _putchar((val % 10) + '0');
