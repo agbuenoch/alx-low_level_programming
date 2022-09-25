@@ -8,7 +8,7 @@
  * @a: first pointer-to-integer parameter.
  * @val: third parameter.
  *
- * Reteurn: nothing.
+ * Return: nothing.
 */
 void vv(int val)
 {
