@@ -7,6 +7,8 @@
  */
 int main(void)
 {
+  print_number(-2147483648);
+  _putchar('\n');
   print_number(98);
   _putchar('\n');
   print_number(402);
