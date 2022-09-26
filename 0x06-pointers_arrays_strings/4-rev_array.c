@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * reverse_array - print strings in reverse.
- * vv- print long string of integer using `_putchar` function.
- * comma- Places comma and empty space after each number
+ * vv - print long string of integer using `_putchar` function.
+ * comma - Places comma and empty space after each number
  * except the last number.
  *
  * @a: first pointer-to-integer parameter.
