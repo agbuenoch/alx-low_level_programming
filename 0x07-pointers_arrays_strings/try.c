@@ -1,21 +1,14 @@
 #include <stdio.h>
 #include <string.h>
-void printArray(int arr[], int n)
-{
-  for (int i=0; i<n; i++)
-    printf("%d", arr[i]);
-  printf("\n");
-}
 
-int main()
-{
-  int n = 10;
-  int arr[n];
+  int main () {
+    int len;
+    const char str1[] = "ABC EFDD EFG 019874";
+    const char str2[] = "ABCD";
 
-  // Fill whole array with 0.
-  memset(arr, 0, n*sizeof(arr[0]));
-  printf("Array after memset()\n");
-  printArray(arr, n);
+    len = strspn(str1, str2);
 
-  return 0;
-}
+    printf("Length of initial segment matching %d\n", len );
+
+    return(0);
+  }
