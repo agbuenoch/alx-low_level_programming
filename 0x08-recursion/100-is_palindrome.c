@@ -8,18 +8,22 @@
 */
 int is_palindrome(char *s)
 {
+  int i;
   int j;
+  i = 0;
   j = 0;
   
- if (*s != '\0')
+ if (s[i] != '\0')
     {
       j++;
+      i++;
     }
-  if (*s == s[j])
+  if (s[i] == s[j])
     {
-      is_palindrome(s + 1);
-      j--;
       return (1);
+      j++;
+      i--;
+      is_palindrome(s);
     }
   else
     {
