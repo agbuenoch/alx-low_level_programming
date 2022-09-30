@@ -1,0 +1,9 @@
+#include "main.h"
+/**
+ * _strcmp - compares two strings
+ *
+ * @s1: first pointer-to-character
+ * @s2: second pointer-to-character
+ *
+ *
+*/
