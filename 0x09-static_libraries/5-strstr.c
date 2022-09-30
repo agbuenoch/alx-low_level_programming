@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strstr - 
+ * _strstr - copy string to string
  *
  * @haystack: first pointer-to-character
  * @needle: second pointer-to-character
