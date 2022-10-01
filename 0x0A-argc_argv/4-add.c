@@ -18,9 +18,11 @@ int sum = 0;
    }
  else
    {
+     int j;
      for (i = 1; i < argc; i++)
        {
-	 if (!(atoi(argv[i]) / 1))
+	 for (j = 0; j < i - 1; j++){
+	 if (!(atoi(argv[j]) / 1))
 	   {
 	     printf("Error\n");
 	     return (0);
@@ -28,7 +30,7 @@ int sum = 0;
 	 else
 	   {
 	     sum += atoi(argv[i]);
-	   }
+	   }}
        }
    }
 printf("%d\n", sum);
