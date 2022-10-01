@@ -20,7 +20,7 @@ else
   {
     for (i = 1; i < argc; i++)
       {
-	if (!(atoi(argv[i]) / 1))
+	if (atoi(argv[i]) != 'A' && atoi(argv[i]) != 'z')
 	  {
 	    printf("Error\n");
 	    return (0);
