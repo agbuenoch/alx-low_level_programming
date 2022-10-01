@@ -2,13 +2,14 @@
 /**
  * main - print name of the program itself
  *
- * @argv - array of pointer-to-character
+ * @argc: number of arguement in the command line
+ * @argv: array of pointer-to-character
  *
  * Return: zero
 */
 int main(int argc, char **argv)
 {
-  while (argc--)
-    printf("%s\n", *argv++);
-  return (0);
+while (argc--)
+printf("%s\n", *argv++);
+return (0);
 }
