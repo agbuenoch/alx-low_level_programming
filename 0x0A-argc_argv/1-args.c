@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * main - print number of arguement passed to main function
@@ -7,11 +8,11 @@
  *
  * Return: zero
 */
-void main (int argc, char *argv[])
+int main (int argc, char *argv[])
 {
-  int res;
-  res = argc
-
-    return (res);
-
+  int i;
+  for (i = 1; i <= argc; i++)
+    ;
+printf("%d\n", i);  
+return (0);
 }
