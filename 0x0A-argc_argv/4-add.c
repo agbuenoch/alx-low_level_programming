@@ -8,7 +8,7 @@
  *
  * Return: zero
 */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 int isdigit(int c);
 int i;
@@ -19,16 +19,18 @@ if (argc < 1)
   }
 else
   {
-     for (i = 1; i < argc; i++)
-	     {
-	       if (isdigit(atoi(argv[i]))){
-		 sum += atoi(argv[i]);}
-     else
-       {
-	 printf("Error\n");
-	 return (0);
-       }
-	     }
+    for (i = 1; i < argc; i++)
+      {
+	if (*argv[i] == 'A')
+	  {
+	    printf("Error\n");
+	    return (0);
+	  }
+	else
+	  {
+	    sum += atoi(argv[i]);
+	  }
+      }
   }
       
 printf("%d\n", sum);
