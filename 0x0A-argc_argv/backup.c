@@ -21,14 +21,27 @@ else
   {
     for (i = 1; i < argc; i++)
       {
-	if ((atoi(argv[i]) == sizeof(int)))
+	if (i <= 9)
 	  {
 	    sum += atoi(argv[i]);
 	  }
 	else
 	  {
-	    printf("Error\n");
-	    return (0);
+	    int j;
+	    int val;
+	    for (j = 0; j < i; j++)
+	      {
+		if (*argv[j] == sizeof(int))
+		  {
+		    val = atoi(argv[j]);
+		  }
+		else
+		  {
+		    printf("Error");
+		    return (0);
+		  }
+	      }
+	    sum += val;
 	  }
       }
   }
