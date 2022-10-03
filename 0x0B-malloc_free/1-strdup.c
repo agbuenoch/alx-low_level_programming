@@ -29,6 +29,10 @@ char *_strdup(char *str)
     {
       return (NULL);
     }
+  if (sizeof(arr) < ((j + 1) * sizeof(*arr)))
+    {
+      return (NULL);
+    }
   
   for (i = 0; str[i] != '\0'; i++)
     {
