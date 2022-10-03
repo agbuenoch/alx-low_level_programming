@@ -23,6 +23,10 @@ if (arr == NULL)
 {
 return (NULL);
 }
+ if (c == sizeof(int))
+   {
+     c = 'c';
+   }
 for (i = 0; i < size - 1; i++)
 {
 arr[i] = c;
