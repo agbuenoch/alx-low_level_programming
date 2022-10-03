@@ -18,17 +18,10 @@ if (size == 0)
 {
 return (NULL);
 }
-arr = malloc(size * sizeof(c));
-if (arr == NULL)
-{
-return (NULL);
-}
-if (c >= 'A' && c <= 'Z')
-{
+arr = malloc(size * sizeof(*arr));
 for (i = 0; i < size - 1; i++)
 {
 arr[i] = c;
-}
 }
 return (arr);
 }
