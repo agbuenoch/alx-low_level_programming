@@ -32,16 +32,11 @@ char *_strdup(char *str)
     {
       return (NULL);
     }
-  if (str)
-    {
+  
   for (i = 0; str[i] != '\0'; i++)
     {
       arr[i] = str[i];
     }
-    }
-  else
-    {
-      return (NULL);
-    }
+ 
   return (arr);
 }
