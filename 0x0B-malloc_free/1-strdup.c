@@ -20,10 +20,10 @@ char *_strdup(char *str)
       ;
     }
   arr = malloc((j + 1) * sizeof(*arr));
-  /*if (arr == NULL)
+  if (arr == NULL)
     {
       return (NULL);
-    }*/
+    }
   if (str == NULL)
     {
       return (NULL);
