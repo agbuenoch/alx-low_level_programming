@@ -19,7 +19,7 @@ char *_strdup(char *str)
     {
       ;
     }
-  if (str == NULL)
+  if (str == 0)
     {
       char fail[] = "failed to allocate memory";
       int ii;
