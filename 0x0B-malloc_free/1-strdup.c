@@ -19,27 +19,21 @@ char *_strdup(char *str)
     {
       ;
     }
+  arr = malloc((j + 1) * sizeof(*arr));
+  if (arr == NULL)
+    {
+      return (NULL);
+    }
   if (str == NULL)
     {
-      char fail[] = "failed to allocate memory\n";
-      int ii;
-      ii = 0;
-      while (fail[ii] != '\0')
-	{
-	  _putchar(fail[ii]);
-	  ii++;
-	}
+      return (NULL);
     }
   if (j < 0)
     {
       return (NULL);
     }
   
-  arr = malloc((j + 1) * sizeof(*arr));
-  if (arr == NULL)
-    {
-      return (NULL);
-    }
+
   
   for (i = 0; str[i] != '\0'; i++)
     {
