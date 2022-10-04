@@ -18,7 +18,7 @@ char **strtow(char *str)
       count++;
     }
 
-  arr = malloc((count + 1) * sizeof(*arr));
+  arr = malloc((count + 1) * sizeof(**arr));
   if (arr == NULL)
     {
       return (NULL);
