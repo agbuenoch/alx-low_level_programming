@@ -11,38 +11,29 @@
 */
 char *_strdup(char *str)
 {
-  char *arr;
-  int i;  
- 
-  int j;
-  if (str == NULL)
-    {
-      return (NULL);
-    }
-  for (j = 0; str[j] != '\0'; j++)
-    {
-      ;
-    }
-  arr = malloc((j + 1) * sizeof(*arr));
-  if (arr == NULL)
-    {
-      return (NULL);
-    }
-  /* if (str == NULL)
-    {
-      return (NULL);
-    } */
-  if (j < 0)
-    {
-      return (NULL);
-    }
-  
-
-  
-  for (i = 0; str[i] != '\0'; i++)
-    {
-      arr[i] = str[i];
-    }
- 
-  return (arr);
+char *arr;
+int i;
+int j;
+if (str == NULL)
+{
+return (NULL);
+}
+for (j = 0; str[j] != '\0'; j++)
+{
+;
+}
+arr = malloc((j + 1) * sizeof(*arr));
+if (arr == NULL)
+{
+return (NULL);
+}
+if (j < 0)
+{
+return (NULL);
+}
+for (i = 0; str[i] != '\0'; i++)
+{
+arr[i] = str[i];
+}
+return (arr);
 }
