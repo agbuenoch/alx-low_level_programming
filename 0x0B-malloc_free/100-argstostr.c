@@ -12,7 +12,7 @@
 char *argstostr(int ac, char **av)
 {
   int i;  
-  char *arr;
+    char *arr; 
   
   if (ac == 0 || av == NULL)
     {
@@ -24,11 +24,12 @@ char *argstostr(int ac, char **av)
     {
       return (NULL);
     }
+
   for (i = 0; i < ac; i++)
     {
         arr[i] = *av[i];
-	_putchar('\n');
-    }
+      
+	}
 
   return (arr);
 }
