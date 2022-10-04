@@ -19,9 +19,9 @@ char *_strdup(char *str)
     {
       ;
     }
-  if (str == 0)
+  if (str == NULL)
     {
-      char fail[] = "failed to allocate memory";
+      char fail[] = "failed to allocate memory\n";
       int ii;
       ii = 0;
       while (fail[ii] != '\0')
