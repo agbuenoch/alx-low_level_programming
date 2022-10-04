@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 
   for (i = 0; i < ac; i++)
     {
-      arr[i] = av[i];
+      /*      arr[i] = av[i]; */
 	_putchar('\n');
     }
   return (arr);
