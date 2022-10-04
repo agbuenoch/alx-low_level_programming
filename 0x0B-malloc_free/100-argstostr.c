@@ -11,8 +11,9 @@
 */
 char *argstostr(int ac, char **av)
 {
-  int i;
+  int i;  
   char *arr;
+  
   if (ac == 0 || av == NULL)
     {
       return (NULL);
@@ -23,10 +24,9 @@ char *argstostr(int ac, char **av)
     {
       return (NULL);
     }
-
-  for (i = 0; i < ac; i++)
+  for (i = 0; i < ac - 1; i++)
     {
-      /* arr[i] = av[i];*/
+        arr[i] = *av[i];
 	_putchar('\n');
     }
   return (arr);
