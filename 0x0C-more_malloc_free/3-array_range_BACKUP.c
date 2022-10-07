@@ -13,9 +13,11 @@ int *array_range(int min, int max)
 {
 int *arr;
 int i;
-int len;
-i = 0;
-len = (max - min) + 1;
+ int len;
+
+ i = 0;
+ len = max - min;
+ 
 arr = malloc(sizeof(int) * len);
 if (arr == NULL)
 {
@@ -25,9 +27,23 @@ if (min > max)
 {
 return (NULL);
 }
-for (i = 0; i < len; i++)
+
+ for (i = 0; i < len; i++)
 {
-arr[i] = min++;
+  if ((arr[i] <= 9 && arr[i] <= max))
+    {
+      arr[i] = min++;
+    }
+  else if (arr[i] > 9)
+    {
+      arr[i] = min++ + '0';
+    }
 }
+/*
+ while (i <= max)
+   {
+     arr[i] = min;
+     min++;
+     } */
 return (arr);
 }
