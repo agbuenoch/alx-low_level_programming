@@ -30,9 +30,13 @@ return (NULL);
 
  for (i = 0; i < len; i++)
 {
-  if (arr[i] <= max)
+  if ((arr[i] <= 9 && arr[i] <= max))
     {
       arr[i] = min++;
+    }
+  else if (arr[i] > 9)
+    {
+      arr[i] = min++ + '0';
     }
 }
 /*
