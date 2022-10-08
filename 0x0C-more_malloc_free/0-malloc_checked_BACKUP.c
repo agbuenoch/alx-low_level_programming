@@ -21,7 +21,9 @@ void *malloc_checked(unsigned int b)
       c = malloc(sizeof(char) * b);
       if ( c == NULL)
 	{
-	  printf("98\n");
+	  _putchar('9');
+	  _putchar('8')
+	    -putchar('\0')
 	}
       return (c);
     }
@@ -30,7 +32,7 @@ void *malloc_checked(unsigned int b)
       i = malloc(sizeof(int) * b);
       if (i == NULL)
 	{
-	  printf("98\n");
+	  _putchar('9');
 	}
       return (i);
     }
