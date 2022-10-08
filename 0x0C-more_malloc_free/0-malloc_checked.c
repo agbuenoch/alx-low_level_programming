@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * malloc_checked - function that allocates memory using malloc 
+ * malloc_checked - function that allocates memory using malloc
  *
  * @b: integer parameter
  *
@@ -10,14 +10,7 @@
 */
 void *malloc_checked(unsigned int b)
 {
-  void *arr;
-
-  arr = malloc(b);
-
-  if (arr == NULL)
-    {
-      printf("98");
-    }
-  
-  return arr;
+void *arr;
+arr = malloc(8 * b);
+return (arr);
 }
