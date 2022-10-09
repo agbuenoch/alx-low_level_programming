@@ -35,7 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     {
       return (NULL);
     }
-  if ((s1 == NULL && s2 == NULL))
+  if ((s1 == NULL) && (s2 == NULL))
     {
       s1 = s2 = "";
     }
@@ -45,7 +45,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
       arr++;
       s1++;
       }
-  if (n >= (i))
+  if (n >= (i + 1))
     {
       *arr = *s2;
       arr++;
