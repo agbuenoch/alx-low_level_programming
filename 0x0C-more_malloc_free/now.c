@@ -1,32 +1,38 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-/**
- * string_nconcat - function that concatenates two strings
- *
- * @s1: first pointer-to-character
- * @s2: second pointer-to-character
- * @n: integer parameter
- *
- * Return: pointer-to-character
-*/
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+
+char *my_strncat(char *s1, char *s2, unsigned int n)
 {
- 
-  while (*s2 && n--)
+  /*Pointer should not null pointer*/
+  if((s1 == NULL) && (s2 == NULL))
+    return NULL;
+  /*Create copy of s1*/
+  char *dest = s1;
+  /*Find the end of the destination string*/
+  while(*dest != '\0')
     {
-      *s1++ = *s2++;
+      dest++;
     }
- 
-  *s1 = '\0';  
-  return (s1);
+  /*Now append the source string characters*/
+  /*until not get null character of s2 or n != 0*/
+  while (n--)
+    {
+      if (!(*dest++ = *s2++))
+	{
+	  return s1;
+	}
+    }
+  /*Append null character in the last*/
+  *dest = '\0';
+  return s1;
 }
 
 int main()
 {
-  char *col;
 
-  col = string_nconcat("Agbu", "Enoch", 3);
+  char *arr;
+  arr = my_strncat("Agbu", "Enoch", 3);
 
-  printf("%s\n", col);
+  printf("%s\n", arr);
 }
