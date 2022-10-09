@@ -14,38 +14,37 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 
   char *arr;
-  int j;
+  unsigned int j;
 
   j = 0;
- 
-  while (*s2 != '\0' && n--)
-    {
-      *s1 = *s2;
-      s1++;
-      s2++;
-    }
+
   while (*s1 != '\0')
     {
       j++;
       s1++;
     }
-
-  arr = malloc(sizeof(*arr) * (j + 1));
+  
+  arr = malloc(sizeof(*arr) * (j + 1 + n));
   if (arr == NULL)
     {
       return (NULL);
     }
-  if ( (s1 == NULL || s2 == NULL))
+  if ((s1 == NULL || s2 == NULL))
     {
       s1 = s2 = "";
     }
- 
   while (*s1 != '\0')
     {
       *arr = *s1;
       arr++;
       s1++;
       }
+  while (n--)
+    {
+      *arr = *s2;
+      arr++;
+      s2++;
+    }
   *arr = '\0';
 
   return (arr);
