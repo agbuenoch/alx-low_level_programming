@@ -17,17 +17,14 @@ unsigned int i;
 unsigned int j;
 
   j = 0;
-
-  while (*s2 != '\0')
-    {
-      *s1 = *s2;
-      s1++;
-      s2++;
-    }
-  while (*s1 != '\0')
+  while (s1[j] != '\0')
     {
       j++;
-      s1++;
+    }
+
+  for (i = 0; i <= n; i++, j++)
+    {
+      s1[j] = s2[i];
     }
   
   arr = malloc((sizeof(*arr) * (j * n)) + 1);

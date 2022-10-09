@@ -12,11 +12,12 @@ void *malloc_checked(unsigned int b)
 {
 void *arr;
 arr = malloc(b);
-if (arr == NULL)
+ if ((arr == NULL))
 {
 _putchar('9');
 _putchar('8');
 _putchar('\n');
+return (arr);
 }
 return (arr);
 }
