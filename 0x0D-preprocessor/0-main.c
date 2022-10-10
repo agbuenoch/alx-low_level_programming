@@ -1,5 +1,5 @@
 #include "object_like_macro.h"
-#include "object_like_macro.h"
+/*#include "object_like_macro.h"*/
 #include <stdio.h>
 
 /**
