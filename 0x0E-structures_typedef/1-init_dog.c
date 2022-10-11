@@ -13,33 +13,8 @@
 */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-  struct dog val;
-  d = &val;
   /*d = malloc(sizeof(struct dog));*/
-  if (d->name == NULL)
-    {
-      printf("(nil)\n");
-    }
-  else
-    {
-      d->name = name;
-    }
-
-  if (&d->age == NULL)
-    {
-      printf("(nil)\n");
-    }
-  else
-    {
+  d->name = name;
       d->age = age;
-    }
-
-  if (d->owner == NULL)
-    {
-      printf("(nil)\n");;
-    }
-  else
-    {
       d->owner = owner;
-    }
 }
