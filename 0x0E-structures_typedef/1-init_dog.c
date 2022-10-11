@@ -17,7 +17,10 @@ if (d == NULL)
 {
 printf("Ok\n");
 }
+else
+{
 d->name = name;
 d->age = age;
 d->owner = owner;
+}
 }
