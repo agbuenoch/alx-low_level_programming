@@ -9,9 +9,9 @@
 int main(void)
 {
 struct dog my_dog;
-my_dog.name = "Ghost";
+my_dog.name = NULL;
 my_dog.age = 4.750000;
-my_dog.owner = "Jon Snow";
+my_dog.owner = NULL;
 print_dog(&my_dog);
 return (0);
 }
