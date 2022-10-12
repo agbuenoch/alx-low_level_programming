@@ -12,7 +12,7 @@ void print_name(char *name, void (*f)(char *))
 {
 if (name == NULL)
 {
-;
+exit(EXIT_SUCCESS);
 }
 else if (*name >= '0' && *name <= '9')
 {
