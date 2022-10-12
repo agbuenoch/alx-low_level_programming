@@ -16,7 +16,7 @@ if (name == NULL)
 }
 else if (*name >= '0' && *name <= '9')
 {
-name = "";
+;
 }
 else
 f(name);
