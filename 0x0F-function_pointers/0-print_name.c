@@ -16,7 +16,7 @@ exit(EXIT_SUCCESS);
 }
 else if (*name >= '0' && *name <= '9')
 {
-;
+exit(EXIT_SUCCESS);
 }
 else
 f(name);
