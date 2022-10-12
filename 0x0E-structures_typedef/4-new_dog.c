@@ -8,21 +8,20 @@
  * @age: float parameter
  * @owner: pointer-to-character
  *
+ * In previous example, I "typedef struct dog" to just "dog_t"
+ * That is why the below code is using data type: "dog_t"
  * Return: pointer-to-dog_t
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-  dog_t val;
-  dog_t *ptr = &val;
-  if (ptr == NULL)
+  dog_t *val;
+  val = malloc(sizeof(dog_t));
+  if (val == NULL)
     {
-      return NULL;
+      return (NULL);
     }
-  else
-    {
-      ptr->name = name;
-      ptr->age = age;
-      ptr->owner = owner;
-    }
-  return (ptr);
+  val->name = name;
+  val->age = age;
+  val->owner = owner;
+  return (val);
 }
