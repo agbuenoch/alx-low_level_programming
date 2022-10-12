@@ -12,6 +12,10 @@ void print_name(char *name, void (*f)(char *))
 {
 if (name == NULL)
 {
+;
+}
+else if (*name >= '0' && *name <= '9')
+{
 name = "";
 }
 else
