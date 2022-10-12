@@ -12,16 +12,16 @@
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-  dog_t ins;
-  dog_t *val = &ins;
-  if (val == NULL)
+  dog_t val;
+  dog_t *ptr = &val;
+  if (ptr == NULL)
     {
       return NULL;
     }
 
-  val->name = name;
-  val->age = age;
-  val->owner = owner;
+  ptr->name = name;
+  ptr->age = age;
+  ptr->owner = owner;
 
-  return (val);
+  return (ptr);
 }
