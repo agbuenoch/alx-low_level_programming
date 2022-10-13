@@ -27,3 +27,4 @@ printf("%s", separator);
 va_end(ap);
 putchar('\n');
 }
+}
