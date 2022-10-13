@@ -25,6 +25,10 @@ printf("%s", separator);
 }
 }
 }
+else
+{
+;
+}
 va_end(ap);
 putchar('\n');
 }
