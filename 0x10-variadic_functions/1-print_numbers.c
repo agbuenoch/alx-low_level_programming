@@ -20,7 +20,6 @@ exit(EXIT_SUCCESS);
 if (n == 0)
 {
 printf("%d\n", n);
-exit(EXIT_SUCCESS);
 }
 for (i = 0; i < n; i++)
 {
