@@ -27,7 +27,7 @@ printf("%s", separator);
 }
 else
 {
-;
+exit(EXIT_SUCCESS);
 }
 va_end(ap);
 putchar('\n');
