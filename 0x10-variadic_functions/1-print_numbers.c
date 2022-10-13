@@ -17,6 +17,10 @@ if (separator == NULL)
 {
 exit(EXIT_SUCCESS);
 }
+if (n == 0)
+{
+exit(EXIT_SUCCESS);
+}
 for (i = 0; i < n; i++)
 {
 printf("%d", va_arg(ap, int));
