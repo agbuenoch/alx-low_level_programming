@@ -24,7 +24,7 @@ if (i < n - 1)
 {
 printf("%s", separator);
 }
+}
 va_end(ap);
 putchar('\n');
-}
 }
