@@ -13,10 +13,13 @@ void print_all(const char * const format, ...)
     
   va_start(ap, format);
 
-  while (1)
+  while (ap != NULL)
     {
+      if (*ap == char*)
 	  printf("%s, ", va_arg(ap, char*));
+      else if (ap == int*)
 	  printf("%d, ", va_arg(ap, int));
+      else if (ap == double*)
 	  printf("%f, ", va_arg(ap, double));
     }
 }

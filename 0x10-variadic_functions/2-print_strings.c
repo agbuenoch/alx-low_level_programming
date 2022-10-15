@@ -10,22 +10,54 @@
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
+  char *val;
 unsigned int i;
 va_list ap;
+ 
 va_start(ap, n);
+ val = "(nil)";
+ 
+ for (i = 0; i < n; i++)
+   {
+     if (ap == NULL)
+       {
+	 printf("%s", val);
+       }
+     else
+       {
+
+       }
+   }
+
+ 
 if (separator == NULL)
 {
 for (i = 0; i < n; i++)
 {
-printf("%s", va_arg(ap, char*));
+  if (ap == NULL)
+    {
+      printf("%s", val);
+    }
+  else
+    {
+      printf("%s", va_arg(ap, char*));
+
+    }
+ }
 }
-}
-else
+ else
 {
 for (i = 0; i < n; i++)
 {
-printf("%s", va_arg(ap, char*));
-if (i < n - 1)
+  if (ap == NULL)
+    {
+      printf("%s", val);
+    }
+  else
+    {
+      printf("%s", va_arg(ap, char*));
+    }
+      if (i < n - 1)
 {
 printf("%s", separator);
 }
