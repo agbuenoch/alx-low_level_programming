@@ -18,15 +18,17 @@ if (separator == NULL)
 for (i = 0; i < n; i++)
 {
 printf("%d", va_arg(ap, int));
-exit(EXIT_SUCCESS);
 }
 }
+else
+{
 for (i = 0; i < n; i++)
 {
 printf("%d", va_arg(ap, int));
 if (i < n - 1)
 {
 printf("%s", separator);
+}
 }
 }
 va_end(ap);
