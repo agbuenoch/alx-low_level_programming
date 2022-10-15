@@ -15,14 +15,20 @@ va_list ap;
 va_start(ap, n);
 if (separator == NULL)
 {
-exit(EXIT_SUCCESS);
+for (i = 0; i < n; i++)
+{
+printf("%s", va_arg(ap, char*));
 }
+}
+else
+{
 for (i = 0; i < n; i++)
 {
 printf("%s", va_arg(ap, char*));
 if (i < n - 1)
 {
 printf("%s", separator);
+}
 }
 }
 va_end(ap);
