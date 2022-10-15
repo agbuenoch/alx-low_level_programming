@@ -18,6 +18,7 @@ if (separator == NULL)
 for (i = 0; i < n; i++)
 {
 printf("%d", va_arg(ap, int));
+exit(EXIT_SUCCESS);
 }
 }
 for (i = 0; i < n; i++)
