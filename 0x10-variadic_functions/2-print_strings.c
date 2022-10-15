@@ -16,20 +16,7 @@ va_list ap;
  
 va_start(ap, n);
  val = "(nil)";
- 
- for (i = 0; i < n; i++)
-   {
-     if (ap == NULL)
-       {
-	 printf("%s", val);
-       }
-     else
-       {
-
-       }
-   }
-
- 
+  
 if (separator == NULL)
 {
 for (i = 0; i < n; i++)
