@@ -21,7 +21,7 @@ for (i = 0; i < n; i++)
 {
   if (separator == NULL)
     {
-      if (va_arg(ap, char*) == NULL)
+      if (ap == NULL)
 	{
 	  printf("%s", val);
 	}
@@ -32,7 +32,7 @@ for (i = 0; i < n; i++)
     }
   else
     {
-      if (va_arg(ap, char*) == NULL)
+      if (ap == NULL)
 	{
 	  printf("%s", val);
 	  if (i < n - 1)
