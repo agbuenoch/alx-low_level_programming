@@ -19,11 +19,15 @@ val = "(nil)";
  
 for (i = 0; i < n; i++)
 {
-  if (separator == NULL)
+  if (ap != NULL)
     {
-      if (va_arg(ap, char*) == NULL)
+      if (separator != NULL)
 	{
-	  printf("%s", val);
+	  printf("%s", va_arg(ap, char*));
+	  if (i < n - 1)
+	    {
+	      printf("%s", separator);
+	    }
 	}
       else
 	{
@@ -32,7 +36,7 @@ for (i = 0; i < n; i++)
     }
   else
     {
-      if (ap == NULL)
+      if (separator != NULL)
 	{
 	  printf("%s", val);
 	  if (i < n - 1)
@@ -42,11 +46,7 @@ for (i = 0; i < n; i++)
 	}
       else
 	{
-	  printf("%s", va_arg(ap, char*));
-	  if (i < n - 1)
-	    {
-	      printf("%s", separator);
-	    }
+	  printf("%s", val);
 	}
     }
  }
