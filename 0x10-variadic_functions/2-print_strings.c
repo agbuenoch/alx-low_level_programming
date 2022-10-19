@@ -38,7 +38,7 @@ for (i = 0; i < n; i++)
     {
       if (separator != NULL)
 	{
-	  printf("%s", val);
+	  printf("%d", *val);
 	  if (i < n - 1)
 	    {
 	      printf("%s", separator);
@@ -46,7 +46,7 @@ for (i = 0; i < n; i++)
 	}
       else
 	{
-	  printf("%s", val);
+	  printf("%d", *val);
 	}
     }
  }
