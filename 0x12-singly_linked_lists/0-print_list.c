@@ -21,7 +21,7 @@ printf("[0] (nill)\n");
 }
 else
 {
-printf("[%d]%s\n", h->len, h->str);
+printf("[%d] %s\n", h->len, h->str);
 }
 h = h->next;
 nodes++;
