@@ -31,7 +31,7 @@ char *duplicate_str(const char *src)
   dest = malloc(sizeof(*dest) * (len + 1));
   if (dest == NULL)
     {
-      free(dest);
+      return (NULL);
     }
   dest_starting_point = dest;
   while (*src)
