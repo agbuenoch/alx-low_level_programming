@@ -54,7 +54,6 @@ new_node->str = duplicate_str(str);
 if (new_node->str == NULL)
 {
 free(new_node);
-return (NULL);
 }
 new_node->len = str_len(str);
 new_node->next = *head;
