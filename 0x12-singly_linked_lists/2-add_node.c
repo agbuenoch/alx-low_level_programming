@@ -56,6 +56,7 @@ list_t *add_node(list_t **head, const char *str)
   new_node->str = duplicate_str(str);
   if (new_node->str == NULL)
     {
+      free(new_node);
       return (NULL);
     }
   new_node->len = str_len(str);
