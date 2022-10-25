@@ -1,4 +1,3 @@
-
 extend printf
 
 section .text:
