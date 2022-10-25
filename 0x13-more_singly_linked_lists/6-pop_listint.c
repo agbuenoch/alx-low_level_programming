@@ -20,5 +20,6 @@ return (0);
 temp = *head;
 val = (*head)->n;
 *head = (*head)->next;
+free(temp);
 return (val);
 }
