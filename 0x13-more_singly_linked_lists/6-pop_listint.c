@@ -19,7 +19,6 @@ return (0);
 }
 temp = *head;
 val = (*head)->n;
-temp = temp->next;
-*head = temp;
+*head = (*head)->next;
 return (val);
 }
