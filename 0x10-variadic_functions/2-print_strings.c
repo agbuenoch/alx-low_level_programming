@@ -21,11 +21,25 @@ va_start(ap, n);
 
      if (separator == NULL)
        {
-	 printf("%s", va_arg(ap, char*));
+	 if (va_arg(ap, char*) == NULL)
+	   {
+	     printf("(nil)");
+	   }
+	 else
+	   {
+	     printf("%s", va_arg(ap, char*));
+	   }
        }
      else
        {
-	 printf("%s", va_arg(ap, char*));
+	 if (va_arg(ap, char*) == NULL)
+	   {
+	     printf("(nil)");
+	   }
+	 else
+	   {
+	     printf("%s", va_arg(ap, char*));
+	   }
 	 if (i < (n - 1))
 	   {
 	     printf("%s", separator);

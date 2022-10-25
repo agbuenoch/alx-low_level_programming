@@ -25,16 +25,22 @@ void print_all(const char * const format, ...)
       i++;
     }
 
-
-  while (j < num_arg && num_arg != '\0')
+  while (j < num_arg && format[j] != '\0')
     {
       if (format[j] == 'i')
-	printf("%d", va_arg(ap, int));
+	{
+	  printf("%d", va_arg(ap, int));
+	}
       else if (format[j] == 's')
-	printf("%s", va_arg(ap, char*));
+	{
+	  printf("%s", va_arg(ap, char*));
+	}
       else if (format[j] == 'f')
-	printf("%f", va_arg(ap, double));
+	{
+	  printf("%f", va_arg(ap, double));
+	}
       j++;
     }
   va_end(ap);
+  printf("\n");
 }

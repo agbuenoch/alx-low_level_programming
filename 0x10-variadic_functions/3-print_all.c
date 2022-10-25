@@ -11,21 +11,13 @@ void print_all(const char * const format, ...)
 {
   va_list ap;
   int num_arg;
-  int i;
   int j;
 
   j = 0;
-  i = 0;
-  num_arg = 0;
   va_start(ap, format);
 
-  while (format[i] != '\0')
-    {
-      num_arg++;
-      i++;
-    }
 
-  while (j < (num_arg))
+  while (format[j] != '\0')
     {
       if (format[j] == 'i')
 	{
