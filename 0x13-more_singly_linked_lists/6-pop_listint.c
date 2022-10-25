@@ -18,7 +18,7 @@ if (*head == NULL)
 {
 return (0);
 }
-val = (*head)->n;
+val = temp->n;
 temp = temp->next;
 *head = temp;
 return (val);
