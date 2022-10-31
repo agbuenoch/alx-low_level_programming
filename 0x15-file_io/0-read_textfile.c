@@ -1,4 +1,4 @@
-0;10;1c#include "main.h"
+#include "main.h"
 
 /**
  * read_textfile - function that reads a text file
@@ -11,40 +11,31 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-  int fd;
-  char *read_into;
-  ssize_t count;
-  
-  count = 0;  
+  char *buffer;
+  ssize_t open_file;
+  ssize_t read_file;
+  ssize_t write_file;
 
-  read_into = malloc(sizeof(char) * letters);
-  /*  if (read_into == NULL)
+  buffer = malloc(sizeof(char) * letters);
+  if (buffer == NULL)
     {
       return (0);
-      }*/
+    }
   if (filename == NULL)
     {
       return (0);
     }
-  fd = open(filename, O_RDONLY);
-  if (fd == -1)
+  open_file = open(filename, O_RDONLY);
+  read_file = read(open_file, buffer, letters);
+  write_file = write(STDOUT_FILENO, buffer, read_file);
+  if (open_file == -1 || read_file == -1 || write_file == -1 || write_file != read_file)
     {
+      free(buffer);
       return (0);
     }
 
-   read(fd, read_into, letters);
-   
-   /* read_into = '\0';*/
-
-  while (*read_into)
-    {
-      _putchar(*read_into);
-      count++;
-      read_into++;
-    }
-
-  free(read_into);
-  close(fd);
+  free(buffer);
+  close(open_file);
   
-  return (count);
+  return (write_file);
 }
