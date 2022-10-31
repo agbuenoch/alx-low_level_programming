@@ -13,20 +13,21 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 
   listint_t *head_copy;
-  /*  listint_t *temp;*/
+  listint_t *temp;
   listint_t *temp2;
   unsigned int node;
 
   head_copy = *head;
   
-  for (node = 0; node < index; node++)
+  for (node = 0; node < (index - 1); node++)
     {
       head_copy = head_copy->next;
     }
-  temp2 = head_copy->next->next;
+  temp->next = head_copy->next;
+  temp2->next = temp->next;    
   /*  temp = head_copy->next;
       free(temp);*/
-  head_copy->next = temp2;
+  head_copy->next = temp2->next;
 
   return (1);
 }
