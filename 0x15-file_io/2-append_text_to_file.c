@@ -1,6 +1,11 @@
 #include "main.h"
 /**
- * 
+ * append_text_to_file - function that appends text at the end of a file
+ *
+ * @filename: constant character-pointer
+ * @text_content: character-pointer
+ *
+ * Return: integer
 */
 int append_text_to_file(const char *filename, char *text_content)
 {
