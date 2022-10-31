@@ -13,8 +13,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 char *buffer;
 ssize_t open_file;
-ssize_t read_file;
-ssize_t write_file;
+ssize_t r_file;
+ssize_t w_file;
 buffer = malloc(sizeof(char) * letters);
 if (buffer == NULL)
 {
@@ -25,18 +25,14 @@ if (filename == NULL)
 return (0);
 }
 open_file = open(filename, O_RDONLY);
-read_file = read(open_file, buffer, letters);
-write_file = write(STDOUT_FILENO, buffer, read_file);
-if (open_file == -1 || read_file == -1 || write_file == -1)
+r_file = read(open_file, buffer, letters);
+w_file = write(STDOUT_FILENO, buffer, r_file);
+if (open_file == -1 || r_file == -1 || w_file == -1 || w_file != r_file)
 {
 free(buffer);
-return (0);
-}
-if (write_file == read_file)
-{
 return (0);
 }
 free(buffer);
 close(open_file);
-return (write_file);
+return (w_file);
 }
