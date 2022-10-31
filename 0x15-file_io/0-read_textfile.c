@@ -1,7 +1,5 @@
 #include "main.h"
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
+
 /**
  * read_textfile - function that reads a text file
  * and prints it to the POSIX standard output
@@ -17,7 +15,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
   char *read_into;
   ssize_t count;
   
-  
+  count = 0;  
   read_into = malloc(sizeof(char) * letters);
   
   fd = open(filename, O_RDONLY);
@@ -26,14 +24,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
       return (0);
     }
 
-  read(fd, read_into, letters);
-  read_into = '\0';
-  close(fd);
+   read(fd, read_into, letters);
+   /* read_into = '\0';*/
 
   while (*read_into)
     {
+      _putchar(*read_into);
       count++;
       read_into++;
     }
+
+  close(fd);
+  
   return (count);
 }
