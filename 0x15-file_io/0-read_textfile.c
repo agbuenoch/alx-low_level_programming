@@ -34,7 +34,6 @@ return (0);
 }
 if (write_file == read_file)
 {
-free(buffer);
 return (0);
 }
 free(buffer);
