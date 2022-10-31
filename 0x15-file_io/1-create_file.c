@@ -33,7 +33,7 @@ int create_file(const char *filename, char *text_content)
   else
     {
       fd = open(filename, O_CREAT, 0600);
-      write(fd, text_content, length);
+      write(fd, text_content, length + 1);
     }
   if (fd == -1)
     {
@@ -42,7 +42,7 @@ int create_file(const char *filename, char *text_content)
 	  _putchar(*err);
 	  err++;
 	}
-	  return (-1);
+      return (-1);
     }
 
   /*  write(fd, text_content, length);*/
