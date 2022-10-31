@@ -28,6 +28,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
     }
 
    read(fd, read_into, letters);
+   
    /* read_into = '\0';*/
 
   while (*read_into)
