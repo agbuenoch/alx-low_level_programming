@@ -1,4 +1,4 @@
-#include "main.h"
+0;10;1c#include "main.h"
 
 /**
  * read_textfile - function that reads a text file
@@ -43,6 +43,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
       read_into++;
     }
 
+  free(read_into);
   close(fd);
   
   return (count);
