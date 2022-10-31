@@ -15,6 +15,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
   int fd;
   char *read_into;
+  ssize_t store;
 
   read_into = malloc(sizeof(char) * letters);
   
@@ -24,8 +25,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
       return (0);
     }
 
-  read(fd, read_into, letters);
-  read_into = '\0';
+  store = read(fd, read_into, letters);
+  store = '\0';
   close(fd);
   
   return (store);
