@@ -14,6 +14,12 @@ int create_file(const char *filename, char *text_content)
   char *err = "fails";
 
   length = 0;
+
+  while (*text_content)
+    {
+      length++;
+      text_content++;
+    }
   
   if (filename == NULL)
     {
@@ -27,6 +33,7 @@ int create_file(const char *filename, char *text_content)
   else
     {
       fd = open(filename, O_RDWR, 0600);
+      write(fd, text_content, length);
     }
   if (fd == -1)
     {
@@ -38,12 +45,7 @@ int create_file(const char *filename, char *text_content)
 	  return (-1);
     }
 
-  while (*text_content)
-    {
-      length++;
-      text_content++;
-    }
-  write(fd, text_content, length);
+  /*  write(fd, text_content, length);*/
   
   return (1);
 }
