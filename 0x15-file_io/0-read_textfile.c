@@ -27,8 +27,12 @@ return (0);
 open_file = open(filename, O_RDONLY);
 read_file = read(open_file, buffer, letters);
 write_file = write(STDOUT_FILENO, buffer, read_file);
-if (open_file == -1 || read_file == -1 || write_file == -1 \
-    || write_file != read_file)
+if (open_file == -1 || read_file == -1 || write_file == -1)
+{
+free(buffer);
+return (0);
+}
+if (write_file == read_file)
 {
 free(buffer);
 return (0);
