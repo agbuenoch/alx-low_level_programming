@@ -1,7 +1,12 @@
 #include "main.h"
 
 /**
+ * main - copies the contents of one file to another file
  *
+ * @argc: integer parameter
+ * @argv: character-pointer;
+ *
+ * Return: integer
 */
 int main(int argc, char **argv)
 {
@@ -43,7 +48,7 @@ int main(int argc, char **argv)
       w = write(to, buffer, r);
       if (to == -1 || w == -1)
 	{
-	  dprintf("Error: Can't write to %s\n", argv[2]);
+	  dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 	  free(buffer);
 	  exit(99);
 	}
