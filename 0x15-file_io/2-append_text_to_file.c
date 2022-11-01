@@ -15,7 +15,7 @@ int length;
 length = 0;
 if (text_content != NULL)
 {
-for (;text_content[length];)
+for (; text_content[length] ;)
 length++;
 }
 if (filename == NULL)
@@ -28,6 +28,6 @@ if (open_file == -1 || write_file == -1)
 {
 return (-1);
 }
-close (open_file);
+close(open_file);
 return (1);
 }
