@@ -1,4 +1,13 @@
 #include "main.h"
+char *create_buffer(char *file);
+void close_file(int fd);
+/**
+ * create_buffer - create a buffer and allocate memory dynamically
+ *
+ * @file: character-pointer
+ *
+ * Return: character-pointer
+*/
 char *create_buffer(char *file)
 {
 char *buff;
@@ -10,6 +19,11 @@ exit(99);
 }
 return (buff);
 }
+/**
+ * close_file - close all open files.
+ *
+ * @fd: integer parameter
+*/
 void close_file(int fd)
 {
 int close_status;
