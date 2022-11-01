@@ -5,7 +5,8 @@
  * @filename: constant character-pointer
  * @text_content: character-pointer
  *
- * Return: integer
+ * Return: if the function fails = -1
+ *                otherwise = 1
 */
 int create_file(const char *filename, char *text_content)
 {
