@@ -23,16 +23,6 @@ if (text_content != NULL)
 for (length = 0; text_content[length];)
 length++;
 }
-/**
- *if (text_content != NULL)
- *{
- *while (*text_content)
- *{
- *length++;
- *text_content++;
- *}
- *}
-*/
 if (filename == NULL)
 {
 return (-1);
