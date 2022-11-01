@@ -7,6 +7,10 @@
  *
  * Return: if the function fails = -1
  *                otherwise = 1
+ *
+ * Description: Created file must have rw------- permission.
+ *              if the file already exist, truncate it.
+ *              if text_content is NULL, create empty file.
 */
 int create_file(const char *filename, char *text_content)
 {
