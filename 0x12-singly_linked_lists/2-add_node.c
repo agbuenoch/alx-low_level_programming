@@ -2,16 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * add_node - function that adds a new node at the beginning of a list_t list.
+ * str_len - counts the length of a string
  *
- * @head: pointer-to-pointer-to-list_t
  * @str: constant character-pointer
  *
- * Description: Duplicate any given strings into a
- * memory storage. If the duplicates fails, then
- * the pointer to the newly created node will be free.
- *
- * Return: list_t pointer
+ * Return: string length
 */
 int str_len(const char *str)
 {
@@ -24,6 +19,13 @@ str++;
 }
 return (len);
 }
+/**
+ * duplicate_str - duplicate string by copying to another file
+ *
+ * @src: constant character-pointer
+ *
+ * Return: character-pointer
+*/
 char *duplicate_str(const char *src)
 {
 int len;
@@ -45,6 +47,14 @@ dest++;
 *dest = '\0';
 return (dest_starting_point);
 }
+/**
+ * add_node - function that add a new node at the beginning of the list_t list
+ *
+ * @head: pointer-to-pointer-to-list_t
+ * @str:constant character pointer
+ *
+ * Return: list_t
+*/
 list_t *add_node(list_t **head, const char *str)
 {
 list_t *new_node;
