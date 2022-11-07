@@ -3,12 +3,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * add_node_end - function that adds a new node at the end of a list_t list
+ * str_len - counts the length of string
  *
- * @head: pointer-to-pointer parameter of type list_t
- * @str: character-pointer
+ * @str: constant character-pointer
  *
- * Return: list_t pointer
+ * Return: string length
 */
 int str_len(const char *str)
 {
@@ -21,6 +20,14 @@ str++;
 }
 return (len);
 }
+/**
+ * add_node_end - function that adds a new node at the end of a list_t list
+ *
+ * @head: pointer-to-pointer parameter of type list_t
+ * @str: character-pointer
+ *
+ * Return: list_t pointer
+*/
 list_t *add_node_end(list_t **head, const char *str)
 {
 int len;
