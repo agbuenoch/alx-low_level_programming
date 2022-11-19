@@ -1,65 +1,21 @@
 #include "main.h"
-#include <stdlib.h>
 /**
- * binary_to_uint - function that converts a binary number
- * to an unsigned int
+ * binary_to_uint - converts a binary number to unsigned int
+ * @b: string containing the binary number
  *
- * @b: constant character-pointer
- *
- * Return: unsigned integer
-*/
-int powa(int n)
-{
-  int i;
-  static int mult;
-  mult = 1;;
-  if (n == 0)
-    {
-      return (mult);
-    }
-  else
-    {
-      for (i = 0; i < n; i++)
-	{
-	  mult *= 2;
-	}
-    }
-  return (mult);
-}
-
+ * Return: the converted number
+ */
 unsigned int binary_to_uint(const char *b)
 {
- 
-  int j;
-  int ans;
-
-  ans = 0;
-  j = 0;
-
-  if (b == NULL)
-    {
-      return (0);
-    }
-  
-  while (*b)
-    {
-      if (*b != '0' || *b != '1')
-	{
-	  return (0);
-	}
-      j++;
-      b++;
-    }
-
-  while (*b)
-    {
-      ans += (*b * (powa(j--)));
-      b++;
-    }
-  /*
-  for (i = 0; b[i] != '\0'; i++)
-    {
-      ans = ans + (b[i] * (powa(j--)));
-      }*/
-  return (ans);
+int i;
+unsigned int dec_val = 0;
+if (!b)
+return (0);
+for (i = 0; b[i]; i++)
+{
+if (b[i] < '0' || b[i] > '1')
+return (0);
+dec_val = 2 * dec_val + (b[i] - '0');
+}
+return (dec_val);
 }
